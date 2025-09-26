@@ -77,7 +77,8 @@ document.addEventListener("keydown", (e) => {
 document.querySelectorAll(".project-link").forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault()
-    alert("This would open the Figma project in a new tab!")
+    window.open(link.href, "_blank")
+    // alert("This would open the Figma project in a new tab!")
     // In a real implementation, you would use:
     // window.open('https://figma.com/your-project-link', '_blank');
   })
