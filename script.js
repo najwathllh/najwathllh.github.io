@@ -29,7 +29,7 @@ if (mobileMenu) {
 if (downloadCV) {
   downloadCV.addEventListener("click", () => {
     const link = document.createElement("a")
-    link.href = "docs/CV_Najwa_Athallah_Putri.pdf"
+    link.href = "/docs/CV_Najwa_Athallah_Putri.pdf"
     link.download = "Najwa_Athallah_Putri_CV.pdf"
     link.click()
   })
