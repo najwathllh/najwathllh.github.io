@@ -28,14 +28,10 @@ if (mobileMenu) {
 // Download CV button
 if (downloadCV) {
   downloadCV.addEventListener("click", () => {
-    // Create a dummy PDF download
     const link = document.createElement("a")
-    link.href =
-      "data:application/pdf;base64,JVBERi0xLjMKJcTl8uXrp/Og0MTGCjQgMCBvYmoKPDwKL1R5cGUgL0NhdGFsb2cKL091dGxpbmVzIDIgMCBSCi9QYWdlcyAzIDAgUgo+PgplbmRvYmoKMiAwIG9iago8PAovVHlwZSAvT3V0bGluZXMKL0NvdW50IDAKPD4KZW5kb2JqCjMgMCBvYmoKPDwKL1R5cGUgL1BhZ2VzCi9Db3VudCAxCi9LaWRzIFs0IDAgUl0KPj4KZW5kb2JqCjQgMCBvYmoKPDwKL1R5cGUgL1BhZ2UKL1BhcmVudCAzIDAgUgovUmVzb3VyY2VzIDw8Ci9Gb250IDw8Ci9GMSAKPDwKL1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1R5cGUxCi9CYXNlRm9udCAvSGVsdmV0aWNhCj4+CmVuZG9iago+PgovTWVkaWFCb3ggWzAgMCA2MTIgNzkyXQovQ29udGVudHMgNSAwIFIKPj4KZW5kb2JqCjUgMCBvYmoKPDwKL0xlbmd0aCA0NAo+PgpzdHJlYW0KQlQKL0YxIDEyIFRmCjEwMCA3MDAgVGQKKE5handhIEF0aGFsbGFoIFB1dHJpIENWKSBUagpFVAplbmRzdHJlYW0KZW5kb2JqCnhyZWYKMCA2CjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDAwOSAwMDAwMCBuIAowMDAwMDAwMDc0IDAwMDAwIG4gCjAwMDAwMDAxMjAgMDAwMDAgbiAKMDAwMDAwMDE3NyAwMDAwMCBuIAowMDAwMDAwMzY0IDAwMDAwIG4gCnRyYWlsZXIKPDwKL1NpemUgNgovUm9vdCAxIDAgUgo+PgpzdGFydHhyZWYKNDU3CiUlRU9G"
+    link.href = "docs/CV_Najwa_Athallah_Putri.pdf"
     link.download = "Najwa_Athallah_Putri_CV.pdf"
-    document.body.appendChild(link)
     link.click()
-    document.body.removeChild(link)
   })
 }
 
@@ -83,16 +79,6 @@ document.querySelectorAll(".project-link").forEach((link) => {
     // window.open('https://figma.com/your-project-link', '_blank');
   })
 })
-
-// Contact links
-const emailLink = document.querySelector('a[href^="mailto:"]')
-if (emailLink) {
-  emailLink.addEventListener("click", (e) => {
-    // This will work with the user's default email client
-    // You can customize the email address here
-    e.target.href = "mailto:najwa.athallah@example.com?subject=Hello from Portfolio"
-  })
-}
 
 // Smooth scrolling for better UX
 document.documentElement.style.scrollBehavior = "smooth"
